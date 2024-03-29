@@ -1,0 +1,13 @@
+docker-compose.yml
+Dockerfile
+
+db/data/*.pem
+db/data/*.cnf
+db/data/*.pid
+db/data/*.log
+db/data/*.err
+db/data/*.sock
+
+*.swp
+*.swo
+*.log
