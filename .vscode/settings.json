@@ -1,0 +1,5 @@
+{
+  "editor.suggest.showKeywords": true,
+  "SQL-Formatter-VSCode.indentStyle": "tabularLeft",
+  "SQL-Formatter-VSCode.keywordCase": "upper"
+}
