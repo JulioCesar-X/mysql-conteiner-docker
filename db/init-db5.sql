@@ -1,33 +1,33 @@
-create database pp_5410;
+-- create database pp_5410;
 
 use pp_5410;
 
-CREATE TABLE
-    funcionarios (
-        id INT PRIMARY KEY,
-        nome_funcionario VARCHAR(50) NOT NULL,
-        departamento VARCHAR(50) NOT NULL
-    );
+-- CREATE TABLE
+--     funcionarios (
+--         id INT PRIMARY KEY,
+--         nome_funcionario VARCHAR(50) NOT NULL,
+--         departamento VARCHAR(50) NOT NULL
+--     );
 
-CREATE TABLE
-    automoveis (
-        matricula VARCHAR(20) PRIMARY KEY,
-        marca VARCHAR(50) NOT NULL,
-        modelo VARCHAR(50) NOT NULL,
-        id_funcionario INT,
-        FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id)
-    );
+-- CREATE TABLE
+--     automoveis (
+--         matricula VARCHAR(20) PRIMARY KEY,
+--         marca VARCHAR(50) NOT NULL,
+--         modelo VARCHAR(50) NOT NULL,
+--         id_funcionario INT,
+--         FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id)
+--     );
 
-CREATE TABLE
-    viagens (
-        id_viagem INT PRIMARY KEY,
-        matricula VARCHAR(20),
-        id_funcionario INT,
-        km_percorridos FLOAT,
-        combustivel_consumido FLOAT,
-        FOREIGN KEY (matricula) REFERENCES automoveis (matricula),
-        FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id)
-    );
+-- CREATE TABLE
+--     viagens (
+--         id_viagem INT PRIMARY KEY,
+--         matricula VARCHAR(20),
+--         id_funcionario INT,
+--         km_percorridos FLOAT,
+--         combustivel_consumido FLOAT,
+--         FOREIGN KEY (matricula) REFERENCES automoveis (matricula),
+--         FOREIGN KEY (id_funcionario) REFERENCES funcionarios (id)
+--     );
 
 INSERT INTO
     funcionarios (id, nome_funcionario, departamento)
