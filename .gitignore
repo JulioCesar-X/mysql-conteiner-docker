@@ -8,6 +8,10 @@ db/data/*.log
 db/data/*.err
 db/data/*.sock
 db/data/ibdata1
+db/data/Campeonato
+db/data/Musica
+db/data/pl4
+db/data/pl5
 
 *.swp
 *.swo
